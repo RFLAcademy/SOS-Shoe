@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoe Settings"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/etShoeSimNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Shoe SIM Phone Number (Required)"
+            android:inputType="phone"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etEmergency1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 1 (Required)"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etEmergency2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 2 (Optional)"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etEmergency3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact 3 (Optional)"
+            android:inputType="phone"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnSaveConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save &amp; Send to Shoe"
+            android:layout_marginBottom="32dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor Calibration"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stand normally on the shoe with your full weight, then tap this button to calibrate the tap sensitivity."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCalibrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calibrate Sensor"
+            android:backgroundTint="#FF9800"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnDebug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open BLE Serial Monitor"
+            android:backgroundTint="#607D8B" />
+
+    </LinearLayout>
+</ScrollView>
